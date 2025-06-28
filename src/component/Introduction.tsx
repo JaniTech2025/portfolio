@@ -1,5 +1,6 @@
-import smallerDp from "../images/smaller_dp.jpg";
-import kolamNavy from "../images/KolamNavy.png";
+import smallerDp from "../../public/images/smaller_dp.jpg";
+import kolamNavy from "../../public/images/KolamNavy.png";
+import Resume from "../../public/JaniResume.pdf";
 
 export default function Introduction() {
   return (
@@ -38,7 +39,7 @@ export default function Introduction() {
           </div>
 
           <a
-            href="/files/resume.pdf"
+            href={Resume}
             download
             className="mt-6 inline-block bg-white text-[#7D93C4] font-semibold py-2 px-6 rounded shadow hover:bg-gray-100 transition"
           >

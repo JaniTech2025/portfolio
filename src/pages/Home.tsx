@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProjects } from "../component/projectService";
-import type { Project } from "../types/project";
+import type { Project } from "../types/type";
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);

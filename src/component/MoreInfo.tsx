@@ -1,4 +1,4 @@
-import biggerDp from "../images/moreintro.jpg";
+import biggerDp from "../../public/images/moreintro.jpg";
 
 export default function MoreInfo() {
   return (
