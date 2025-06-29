@@ -6,7 +6,7 @@ A responsive, pastel-toned developer portfolio showcasing my journey, projects, 
 
 ## Live Site
 
-[https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)
+[https://your-netlify-site.netlify.app](https://cosmic-cassata-3e45d0.netlify.app/)
 
 ---
 
