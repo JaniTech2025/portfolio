@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -10,9 +11,31 @@ export default function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    console.log("Submitted form:", form);
-    setSubmitted(true);
-    // TODO: integrate Firestore or backend API here
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          reply_to: form.email,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        alert("Oops, something went wrong. Please try again.");
+      });
+  }
+
+  // Reset form and show it again
+  function handleOkay() {
+    setSubmitted(false);
+    setForm({ name: "", email: "", message: "" });
   }
 
   return (
@@ -20,7 +43,15 @@ export default function ContactForm() {
       <h2 className="text-3xl font-semibold mb-6 text-center">Get in Touch</h2>
 
       {submitted ? (
-        <p className="text-green-600 text-center">Thanks! I’ll get back to you shortly.</p>
+        <div className="text-center">
+          <p className="text-green-600 mb-4">Thanks! I’ll get back to you shortly.</p>
+          <button
+            onClick={handleOkay}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Okay
+          </button>
+        </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input

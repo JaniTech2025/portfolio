@@ -4,12 +4,12 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer(): JSX.Element {
   return (
-    <footer className="bg-gray-900 text-gray-300 p-6 mt-20 text-center flex flex-col items-center gap-4">
+    <footer className="bg-purple-900 text-purple-100 p-6 mt-20 text-center flex flex-col items-center gap-4">
       <p>© 2025 Jani&apos;s Portfolio. All rights reserved.</p>
 
-      <div className="flex justify-center gap-6 text-2xl">
+      <div className="flex justify-center gap-6 text-2xl text-purple-100">
         <a
-          href="https://www.instagram.com/your_instagram_username"
+          href="https://www.instagram.com/aussieinkspire/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -19,7 +19,7 @@ export default function Footer(): JSX.Element {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/your_linkedin_profile"
+          href="https://www.linkedin.com/in/janitech2025"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

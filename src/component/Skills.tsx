@@ -1,62 +1,51 @@
 import type { JSX } from "react";
+import { FaCloud } from "react-icons/fa";
 import {
   SiReact,
   SiTypescript,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiPostgresql,
-  SiDocker,
+  SiMysql,
   SiGit,
-  SiTailwindcss,
+  SiSass,
+  SiSpring,
 } from "react-icons/si";
 
 export default function FullStackDeveloper(): JSX.Element {
   return (
-    <section
-      id="fullstack"
-      className="w-full px-4 sm:px-8 py-8 mt-16"
-      style={{ backgroundColor: "#FFFFFF" }}      
-    >
+    <section id="skills" className="text-black py-12">
+      <h2 className="text-3xl font-bold mb-8 text-center">.My Skills.</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
-    <h2 className="text-3xl font-bold text-center mb-8 text-black">
-    <u>.My Skillset.</u>
-    </h2>
-
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-black">
         <div>
           <h3 className="text-xl font-semibold mb-4">Frontend</h3>
           <div className="flex flex-col items-center gap-3 text-4xl text-blue-600">
             <SiReact title="React" />
             <SiTypescript title="TypeScript" />
-            <SiTailwindcss title="Tailwind CSS" />
+            <SiSass title="SCSS" />
           </div>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-4">Backend</h3>
-          <div className="flex flex-col items-center gap-3 text-4xl text-green-600">
-            <SiNodedotjs title="Node.js" />
-            <SiExpress title="Express" />
+          <div className="flex flex-col items-center gap-3 text-4xl text-green-700">
+            <SiSpring title="Spring Framework" />
+            <FaCloud title="RESTful API" />
           </div>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-4">Database</h3>
           <div className="flex flex-col items-center gap-3 text-4xl text-indigo-600">
-            <SiMongodb title="MongoDB" />
-            <SiPostgresql title="PostgreSQL" />
+            <SiMysql title="MySQL" />
           </div>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-4">Tools</h3>
           <div className="flex flex-col items-center gap-3 text-4xl text-gray-700">
-            <SiDocker title="Docker" />
             <SiGit title="Git" />
           </div>
         </div>
+
       </div>
     </section>
   );
