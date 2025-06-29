@@ -34,8 +34,9 @@ A responsive, pastel-toned developer portfolio showcasing my journey, projects, 
 
 ## Setup Instructions
 
-1. Clone the repo:
-   ````bash
-   git clone https://github.com/JaniTech2025/portfolio.git
-   cd portfolio   ```
-   ````
+Clone the repo:
+
+````bash
+git clone https://github.com/JaniTech2025/portfolio.git
+cd portfolio   ```
+````
