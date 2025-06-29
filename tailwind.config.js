@@ -6,6 +6,9 @@ export default {
         heading: ['"Playfair Display"', "serif"],
         body: ['"Quicksand"', "sans-serif"],
       },
+      screens: {
+        custom: "700px",
+      },
     },
   },
   plugins: [],

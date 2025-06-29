@@ -11,8 +11,8 @@ import {
 
 export default function FullStackDeveloper(): JSX.Element {
   return (
-    <section id="skills" className="text-black py-12">
-      <h2 className="font-heading text-2xl font-bold mb-8 text-center">.My Skills.</h2>
+    <section id="skills" className="text-black py-6 sm:py-8 md:py-12 lg:py-16">
+        <h2 className="font-heading text-2xl font-semibold mb-6 text-center">.My Skills.</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
         <div>
