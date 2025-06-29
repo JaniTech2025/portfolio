@@ -57,7 +57,7 @@ export default function MyJourney(): JSX.Element {
       id="journey"
       className="w-full px-4 py-16 bg-indigo-100 text-indigo-900"
     >
-      <h2 className="text-4xl font-bold text-center mb-16">.My Journey.</h2>
+      <h2 className="font-heading text-2xl font-bold text-center mb-16">.My Journey.</h2>
 
       <div className="relative max-w-4xl mx-auto pl-6 sm:pl-10">
         <div className="absolute left-4 sm:left-6 top-0 h-full w-1 bg-indigo-100 z-0" />
@@ -70,11 +70,11 @@ export default function MyJourney(): JSX.Element {
             <span className="absolute left-[-22px] sm:left-[-26px] top-2 w-5 h-5 bg-indigo-100 border-4 border-[#7D93C4] rounded-full z-10" />
 
             <div className="text-indigo-900">
-              <time className="block text-sm font-semibold text-indigo-900 mb-1">
+              <time className="font-body block text-sm font-semibold text-indigo-900 mb-1">
                 {item.year}
               </time>
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-indigo-900/90">{item.description}</p>
+              <h3 className="font-heading text-xl font-bold mb-2">{item.title}</h3>
+              <p className="font-body text-indigo-900/90">{item.description}</p>
             </div>
           </div>
         ))}

@@ -40,11 +40,11 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="mt-16 container mx-auto px-4 max-w-lg">
-      <h2 className="text-3xl font-semibold mb-6 text-center">Get in Touch</h2>
+      <h2 className="font-heading text-2xl font-semibold mb-6 text-center">.Get in Touch.</h2>
 
       {submitted ? (
         <div className="text-center">
-          <p className="text-green-600 mb-4">Thanks! I’ll get back to you shortly.</p>
+          <p className="font-body text-green-600 mb-4">Thanks! I’ll get back to you shortly.</p>
           <button
             onClick={handleOkay}
             className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
@@ -83,7 +83,7 @@ export default function ContactForm() {
           />
           <button
             type="submit"
-            className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+            className="font-body bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
           >
             Send Message
           </button>

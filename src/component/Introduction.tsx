@@ -45,8 +45,8 @@ export default function Introduction() {
             </button>
           </div>
 
-          <div className="text-center font-sans font-extralight leading-normal">
-            <h1 className="mb-2 text-2xl font-semibold">.About Me.</h1>
+          <div className="font-body text-center font-sans font-extralight leading-normal">
+            <h1 className="font-heading mb-2 text-2xl font-semibold">.About Me.</h1>
             <p>Hi, Welcome to my portfolio. I am a Programmer.</p>
             <p>When I am not coding, you are likely to find me solving a Sudoku puzzle,</p>
             <p>reading books, or unwinding with some Netflix.</p>
@@ -55,7 +55,7 @@ export default function Introduction() {
           {!accessGranted && !showPasswordInput && (
             <button
               onClick={() => setShowPasswordInput(true)}
-              className="mt-6 inline-block bg-white text-rose-900 font-semibold py-2 px-6 rounded shadow hover:bg-gray-100 transition"
+              className="font-body mt-6 inline-block bg-white text-rose-900 font-semibold py-2 px-6 rounded shadow hover:bg-gray-100 transition"
             >
               Download Resume
             </button>
@@ -72,7 +72,7 @@ export default function Introduction() {
               />
               <button
                 type="submit"
-                className="bg-rose-900 text-white px-4 py-1 rounded hover:bg-rose-800"
+                className="font-body bg-rose-900 text-white px-4 py-1 rounded hover:bg-rose-800"
               >
                 Submit
               </button>

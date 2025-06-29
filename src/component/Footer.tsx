@@ -4,7 +4,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer(): JSX.Element {
   return (
-    <footer className="bg-purple-900 text-purple-100 p-6 mt-20 text-center flex flex-col items-center gap-4">
+    <footer className="font-body bg-purple-900 text-purple-100 p-6 mt-20 text-center flex flex-col items-center gap-4">
       <p>© 2025 Jani&apos;s Portfolio. All rights reserved.</p>
 
       <div className="flex justify-center gap-6 text-2xl text-purple-100">

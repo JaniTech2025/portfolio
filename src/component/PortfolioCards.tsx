@@ -57,10 +57,10 @@ export default function PortfolioCards() {
 
   return (
     <div id="portfoliocards" className="container mx-auto p-6 bg-white-100" >
-      <h1 className="text-3xl font-bold text-center mb-10">.My Projects.</h1>
+      <h1 className="font-heading text-2xl font-bold text-center mb-10">.My Projects.</h1>
 
       {projects.length === 0 ? (
-        <p className="text-center text-gray-500">No projects found.</p>
+        <p className="font-body text-center text-gray-500">No projects found.</p>
       ) : (
         <div className="relative">
           <button
@@ -88,12 +88,12 @@ export default function PortfolioCards() {
                 />
 
                 <div className="flex-1">
-                  <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                  <h2 className="font-heading text-xl font-semibold text-gray-800 mb-2">
                     {project.name}
                   </h2>
-                  <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                  <p className="font-body text-gray-600 text-sm mb-4">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="font-body flex flex-wrap gap-2 mb-4">
                     {project.techStack.map((tech) => (
                       <span
                         key={tech}

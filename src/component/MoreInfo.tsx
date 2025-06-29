@@ -18,8 +18,8 @@ export default function MoreInfo() {
 
           </div>
 
-        <div className="text-center font-sans font-extralight leading-normal space-y-4">
-          <h2 className="text-3xl font-bold font-serif mb-6">.A Bit About Myself.</h2>
+        <div className="font-body text-center font-sans font-extralight leading-normal space-y-4">
+          <h2 className="font-heading text-2xl font-bold font-serif mb-6">.A Bit About Myself.</h2>
           <p>I have a background in Computer Science and a love for technology and learning.</p>
           <p>I’ve always enjoyed the mix of logic, problem-solving, and creativity that coding offers.</p>
           <p>I'm always looking to learn something new and connect with people who share that mindset.</p>
