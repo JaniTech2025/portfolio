@@ -21,9 +21,9 @@ const journey: JourneyItem[] = [
   },
   {
     year: "2005",
-    title: "Fortran, Mainframe & Linux Shell scripting, Insurance Domain",
+    title: "Working in Tech industry",
     description:
-      "Started my career working in the tech industry. GOt an opportunity to be a module lead for an insurance Software. Gained international experience by working onsite in the U.S.",
+      "Started my career working in the tech industry. Got an opportunity to be a module lead for an insurance Software. Gained international experience by working onsite in the U.S.",
   },
   {
     year: "2012",

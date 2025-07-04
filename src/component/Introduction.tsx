@@ -53,7 +53,7 @@ export default function Introduction() {
 
           <div className="font-body text-center font-sans font-extralight leading-normal">
             <h1 className="font-heading mb-2 text-2xl font-semibold">.About Me.</h1>
-            <p>Hi, Welcome to my portfolio. I am a Programmer.</p>
+            <p>Hi, Welcome to my portfolio. I am a Full Stack developer.</p>
             <p>When I am not coding, you are likely to find me solving a Sudoku puzzle,</p>
             <p>reading books, or unwinding with some Netflix.</p>
           </div>
