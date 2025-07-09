@@ -26,7 +26,7 @@ export default function PortfolioCards() {
         const snapshot = await getDocs(collection(db, "portfolio"));
         const items = snapshot.docs.map((doc) => {
           const data = doc.data() as Omit<Project, "imageUrl">;
-          const localImageUrl = `/images/project${data.id}.png`;
+          const localImageUrl = import.meta.env.BASE_URL + `/images/project${data.id}.png`;
           return {
             ...data,
             imageUrl: localImageUrl,
