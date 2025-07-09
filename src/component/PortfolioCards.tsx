@@ -3,6 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firestore";
 import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
+
 type Project = {
   id: number;
   name: string;
@@ -82,7 +83,7 @@ export default function PortfolioCards() {
                   alt={project.name}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src =
-                      "/images/projects/placeholder.jpg";
+                      import.meta.env.BASE_URL + "/images/projects/placeholder.jpg";
                   }}
                   className="h-72 w-full object-cover rounded-md mb-4"
                 />
